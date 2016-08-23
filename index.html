@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-	  <title>Curiosity.js</title>
-	  <meta charset="utf-8">
-	  <meta name="description" content="">
-	  
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>   
-  </head>
-  <body>
-      
-      <div id="results"></div>
-      
-        
-      <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-    	<script type="text/javascript" src="Curiosity.jquery.js"></script>
-    	<script>
-	    	$('#results').Curiosity('locate');	
-	    </script>
-	</body>
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>Reverse Geocoding</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=<YOUR KEY HERE>" async=""></script>
+<script type="text/javascript" src="Curiosity.jQuery.js"></script>
+
+<script>
+	$(document).ready(function(){
+		$('#placement').Curiosity();
+	});
+</script>
+
+</head>
+<body>
+
+<div id="placement"></div>
+
+</body>
 </html>
